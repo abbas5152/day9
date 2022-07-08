@@ -1,0 +1,60 @@
+package day9;
+
+import java.util.Scanner;
+
+public class AllStudents {
+	public static void main(String[] args) {
+      Scanner s1= new Scanner(System.in);
+//		
+		HistoryStudent h1=new HistoryStudent();
+		System.out.println("Enter name of history student");
+  		String n=s1.nextLine();
+  		System.out.println("Enter address of that student");
+  		String a=s1.nextLine();
+  		System.out.println("Enter civics mark");
+  		int c=s1.nextInt();
+  		System.out.println("Enter history mark");
+  		int h=s1.nextInt();
+  		
+	
+		
+		h1.civicsMarks=c;
+		h1.historyMarks=h;
+	      ScienceStudent sc1=new ScienceStudent();
+	     
+		System.out.println("Enter name of science student");
+		 String na=s1.next();
+  		
+  		System.out.println("Enter address of that student");
+  		String ad=s1.next();
+  		System.out.println("Enter physics mark");
+  		int ph=s1.nextInt();
+  		System.out.println("Enter chemistry mark");
+  		int ch=s1.nextInt();
+  		System.out.println("Enter maths mark");
+  		int math=s1.nextInt();
+  		
+	
+		
+		sc1.chemistryMarks=ch;
+		sc1.mathsMarks=math;
+		sc1.phisicsMarks=ph;
+		
+		System.out.println("Detais of history student");
+		System.out.println("Name: "+ n);
+		System.out.println("Address: "+a);
+		System.out.println("Percentage is: "+h1.getPercentage());
+		
+		System.out.println("-------------------------------");
+		
+		System.out.println("Detais of Science student");
+		System.out.println("Name: "+ na);
+		System.out.println("Address: "+ad);
+		System.out.println("Percentage is: "+sc1.getPercentage());
+		
+		
+		
+		
+	}
+
+}
