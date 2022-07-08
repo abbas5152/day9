@@ -1,0 +1,21 @@
+package day9;
+
+public class HistoryStudent extends Student{
+	
+		
+		int historyMarks;
+		
+;
+		int civicsMarks;
+		
+		@Override
+		public int getPercentage() {
+			int total= historyMarks + civicsMarks;
+			return (total/2);
+		}
+		
+
+
+}
+
+
